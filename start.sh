@@ -21,7 +21,7 @@ if [ ! -s /etc/apache2/magic ]; then
     cp -r /etc/apache2-orig/* /etc/apache2/
 fi
 
-service apache2 start
+service apache2 restart
 
 wait_signal
 
